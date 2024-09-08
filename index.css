@@ -1,0 +1,474 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: AlexBrushRegular;
+  src: url(fonts/Alex_Brush/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+  font-family: NVNFunkySignature;
+  src: url(fonts/NVNFunkySignature/OpenType-TT/NVNFunkySignature-Regular.ttf);
+}
+
+body,
+html {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  background-color: #e9f1f1;
+}
+
+.container {
+  margin: auto;
+  background-color: white;
+  height: 100%;
+  max-width: 400px;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.intro .full-bg {
+  /* The image used */
+  background-image: url("img/HEE00028.JPG");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* transform-origin: center; */
+  animation: scale 5000ms ease-in-out forwards;
+}
+
+.intro-content {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+  height: 80%;
+  width: 80%;
+  opacity: 1;
+
+  transition: 0.5s ease;
+
+  border: 1.25px solid white;
+  border-radius: 5px;
+
+  backdrop-filter: blur(1.5px);
+  background-color: rgb(255 255 255 / 20%);
+}
+.intro-content .title {
+  font-size: 2.2em;
+  margin-top: 0.5em;
+  font-family: 'NVNFunkySignature';
+}
+.intro-content .icon {
+  margin-top: 0.8em;
+}
+
+.intro .name {
+  font-size: 3em;
+  margin: 0.3em auto;
+}
+
+hr.solid {
+  border-top: 1px solid white;
+  width: 60%;
+}
+
+.section-time {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.day,
+.hours {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font-size: 1.1em;
+}
+.day {
+  padding: 10px 0;
+}
+.hours {
+  padding: 10px 10px;
+}
+.date {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.month-year {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.25em;
+}
+
+.address {
+  padding-top: 10px;
+  font-size: 1.25em;
+}
+
+.list-icon button {
+  margin-top: 2em;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: transparent;
+  height: 40px;
+  width: 40px;
+  color: white;
+}
+
+/* info */
+.info {
+  text-align: center;
+  /* height: 100vh; */
+  
+}
+
+.info .title {
+  font-family: 'NVNFunkySignature';
+  font-size: 2.2em;
+}
+
+.info .image {
+  margin: 1em 1em;
+  /* height: 41vh; */
+  overflow: hidden;
+  position: relative;
+}
+
+.info img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.info-text {
+  position: absolute;
+  color: white;
+  left: 5%;
+  
+}
+
+.text-animation {
+  animation: text-animation 5000ms forwards;
+}
+
+@keyframes text-animation {
+  0% {
+    top: 100%;
+  }
+
+  100% {
+    top: 5%;
+  }
+}
+
+.info .name {
+  font-size: 1.25em;
+  /* margin: 0.3em auto; */
+}
+
+/* count down */
+.count-down-container {
+  background-color: #f8ecec;
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+.count-down {
+  margin: 1em 1em;
+  text-align: center;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+
+  border-top-left-radius: 35%;
+  border-top-right-radius: 35%;
+
+}
+.count-down .full-bg {
+  /* The image used */
+  background-image: url("img/countdown-bg-2.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: blur(1px);
+
+  /* transform-origin: center; */
+  /* animation: scale 5000ms ease-in-out forwards; */
+}
+
+.count-down .title {
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-size: 1.15em;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@keyframes scale-icon {
+  from {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+}
+
+.count-down .icon {
+  width: 50px;
+  height: 50px;
+  animation: scale-icon 1500ms infinite;
+  color: pink;
+
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.time .item {
+  padding: 0.5em 0.2em;
+  position: relative;
+  border-radius: 5px;
+  backdrop-filter: blur(3px);
+  background-color: rgb(255 255 255 / 50%);
+}
+.time {
+  display: grid;
+  grid-template-columns: 4.5em 4.5em 4.5em 4.5em;
+  column-gap: 1em;
+  grid-template-rows: 4.em;
+  justify-content: center;
+  align-items: center;
+  align-content: end;
+
+  color: white;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+  opacity: 1;
+}
+#day,
+#hour,
+#minute,
+#seconds {
+  font-size: xxx-large;
+}
+
+/* love story style */
+.love-story {
+  position: relative;
+  /* padding-top: 1em; */
+  
+  height: 100vh;
+  overflow: hidden;
+}
+
+.love-story__bg {
+  /* position: absolute; */
+  /* top: 0; */
+  /* The image used */
+  background-image: url("img/love-story/bg2.jpg");
+
+  /* Full height */
+  height: 100%;
+  /* width: 100vw; */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: blur(1px);
+}
+.love-story__content {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.love-story__title {
+  font-family: 'NVNFunkySignature';
+  text-align: center;
+  font-size: 2.2em;
+  /* height: 10vh; */
+}
+
+.love-story__row {
+  position: relative;
+  height: 20vh;
+}
+.love-story__item {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.love-story__item p {
+  width: 40%;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.love-story__item img {
+  width: 40%;
+  height: auto;
+  border: 10px solid rgb(163 56 23);
+  border-radius: 8px;
+}
+
+.love-story-animation {
+  animation: love-story-animation 1000ms forwards;
+}
+
+@keyframes love-story-animation {
+  0% {
+    top: 100%;
+  }
+
+  100% {
+    top: 5%;
+  }
+}
+
+.vertical-line {
+  border-left: 2px solid white;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  margin-left: -3px;
+}
+/* end love story style */
+
+/* start mung cuoi */
+.mung-cuoi {
+  text-align: center;
+  height: 50vh;
+}
+
+.mung-cuoi .title {
+  font-family: 'NVNFunkySignature';
+  text-align: center;
+  font-size: 2.2em;
+  
+}
+.mung-cuoi .info {
+  border-radius: 5px;
+  border: 1px solid pink;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+.mung-cuoi .info .header {
+  color: white;
+  padding: 12px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: rgb(163 56 23);
+}
+.mung-cuoi button {
+  border: none;
+  color: rgb(163 56 23);
+  background: none;
+  cursor: pointer;
+}
+/* end mung cuoi */
+
+/* start contact */
+.contact {
+  margin-top: 2em;
+  text-align: center;
+  height: 50vh;
+  padding: 4em;
+  background-color: #f8ecec;
+}
+
+.contact .title {
+  font-weight: bold;
+}
+.contact .info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.contact .info button {
+  border: none;
+  color: green;
+  background: none;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+/* end contact */
+
+.footer {
+  text-align: center;
+  padding: 0.8em;
+  font-size: 0.6em;
+}
+
+.footer span {
+  font-weight: bolder;
+}
