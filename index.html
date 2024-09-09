@@ -32,10 +32,19 @@
           </div>
 
           <div class="month-year">09.2024</div>
-          <div class="address">Chúng mình sẽ kết hôn tại</div>
+          <p class="address">
+            Chúng mình sẽ kết hôn tại
+            <br />
+            Tư gia nhà trai
+            <br />
+            33/67 Đặng Xuân Bảng
+            <br />
+            Nam Phong - Nam Định
+          </p>
+          <!-- <div class="address">Chúng mình sẽ kết hôn tại</div>
           <div class="address">tư gia nhà trai</div>
           <div class="address">33/67 Đặng Xuân Bảng</div>
-          <div class="address">Nam Phong - Nam Định</div>
+          <div class="address">Nam Phong - Nam Định</div> -->
 
           <hr class="solid" />
           <div class="list-icon">
@@ -73,26 +82,36 @@
         <div class="image">
           <img src="img/HEE00021.JPG" />
           <div class="info-text">
-            <p class="name">DƯƠNG THỊ THOA</p>
-            <p>Bố: Dương Đình Khanh</p>
-            <p>Mẹ: Trần Thị Ngát</p>
+            <p><b>DƯƠNG THỊ THOA</b>
+              <br>
+              <em>con gái của</em>
+              <br>
+              Ông: <b>Dương Đình Khanh</b>
+              <br>
+              Bà: <b>Trần Thị Ngát</b>
+            </p>
           </div>
         </div>
         <div class="image">
           <img src="img/HEE09703.JPG" />
           <div class="info-text">
-            <p class="name">ĐOÀN DUY ĐẠT</p>
-            <p>Bố: Đoàn Duy Quang</p>
-            <p>Mẹ: Đoàn Thị Xuân</p>
+            <p><b>ĐOÀN DUY ĐẠT</b>
+              <br>
+              <em>con trai của</em>
+              <br>
+              Ông: <b>Đoàn Duy Quang</b>
+              <br>
+              Bà: <b>Đoàn Thị Xuân</b>
+            </p>
           </div>
         </div>
       </div>
 
       <div class="count-down-container">
+        <!-- <p class="title">Save The Date</p> -->
         <div class="count-down">
           <div class="full-bg"></div>
           <div class="title">
-            <p>CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
             <p>Save The Date</p>
           </div>
           <!-- <i class="icon" data-feather="heart"></i> -->
@@ -119,6 +138,7 @@
       </div>
 
       <div class="album">
+        <img class="logo" src="img/album-icon.png" alt="">
         <div class="title">
           <p>Album ảnh cưới</p>
         </div>
@@ -182,34 +202,48 @@
         <div class="love-story__title">
           <p>Love Story</p>
         </div>
-        <div class="love-story__bg"></div>
-
         <div class="love-story__content">
-          <!-- <div class="love-story__title">
-            <p>Love Story</p>
-          </div> -->
-
           <div class="love-story__row">
             <div class="love-story__item">
-              <p class="">Ngày lần đầu gặp</p>
-              <img src="img/love-story/ngay-dau.jpg" alt="" />
+              <p class="">Năm 2019</p>
+              <img src="img/love-story/2019.jpg" alt="" />
             </div>
           </div>
           <div class="love-story__row">
             <div class="love-story__item reverse">
-              <p class="">Tốt nghiệp</p>
+              <p class="">Năm 2020</p>
+              <img src="img/love-story/2020.jpg" alt="" />
+            </div>
+          </div>
+          <div class="love-story__row">
+            <div class="love-story__item">
+              <p class="">Năm 2021</p>
               <img src="img/love-story/tot-nghiep.jpg" alt="" />
             </div>
           </div>
           <div class="love-story__row">
+            <div class="love-story__item reverse">
+              <p class="">Năm 2022</p>
+              <img src="img/love-story/2022.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="love-story__row">
             <div class="love-story__item">
-              <p class="">Cầu hôn</p>
-              <img src="img/love-story/cau-hon.jpg" alt="" />
+              <p class="">Năm 2023</p>
+              <img src="img/love-story/2023.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="love-story__row">
+            <div class="love-story__item reverse">
+              <p class="">Năm 2024</p>
+              <img src="img/love-story/2024.jpg" alt="" />
             </div>
           </div>
           <div class="love-story__row">
-            <div class="love-story__item reverse">
-              <p class="">Thành hôn</p>
+            <div class="love-story__item">
+              <p class=""></p>
               <img src="img/love-story/thanh-hon.JPG" alt="" />
             </div>
           </div>
@@ -218,56 +252,78 @@
       </div>
 
       <div id="mung-cuoi" class="mung-cuoi">
+        <img class="logo" src="img/gift.png" alt="">
         <div class="title">
-          <p>Mừng cưới</p>
+          <p>Quà mừng cưới</p>
         </div>
         <div class="info">
-          <div class="header">Số tài khoản chú rể</div>
-          <p>TCB</p>
-          <p id="card-number-1">
-            1234567890<button>
-              <i data-feather="copy" onclick="copyText('card-number-1')"></i>
-            </button>
-          </p>
-          <p>DOAN DUY DAT</p>
+          <div class="header collapsible">
+            Số tài khoản chú rể
+            <i class="size-18" data-feather="chevron-down"></i>
+          </div>
+          <div class="content">
+            <p>TCB</p>
+            <p id="card-number-1">
+              1234567890<button>
+                <i
+                  class="size-18"
+                  data-feather="copy"
+                  onclick="copyText('card-number-1')"
+                ></i>
+              </button>
+            </p>
+            <p>DOAN DUY DAT</p>
+          </div>
         </div>
         <div class="info">
-          <div class="header">Số tài khoản cô dâu</div>
-          <p>MB</p>
-          <p id="card-number-2">
-            1234567890<button>
-              <i data-feather="copy" onclick="copyText('card-number-2')"></i>
-            </button>
-          </p>
-          <p>DUONG THI THOA</p>
+          <div class="header collapsible">
+            Số tài khoản cô dâu
+            <i class="size-18" data-feather="chevron-down"></i>
+          </div>
+          <div class="content">
+            <p>MB</p>
+            <p id="card-number-2">
+              1234567890<button>
+                <i
+                  class="size-18"
+                  data-feather="copy"
+                  onclick="copyText('card-number-2')"
+                ></i>
+              </button>
+            </p>
+            <p>DUONG THI THOA</p>
+          </div>
         </div>
       </div>
 
       <div id="contact" class="contact">
         <div class="title">
-          <p>THÔNG TIN LIÊN HỆ</p>
+          <p>THÔNG TIN LIÊN HỆ
+            <br>
+            <em style="font-size: small;">Click icon để lấy số điện thoại 
+              <br>
+              của chúng mình nha</em>
+          </p>
         </div>
         <div class="info">
-          <div>Chú rể</div>
+          <div><img src="img/groom.png" alt=""></div>
           <div>Đoàn Duy Đạt</div>
-          <button onclick="copyPhoneCr()"><i data-feather="phone"></i></button>
+          <button onclick="copyPhoneCr()"><i class="size-20" data-feather="copy"></i></button>
         </div>
         <div class="info">
-          <div>Cô dâu</div>
+          <div><img src="img/bride.png" alt=""></div>
           <div>Dương Thị Thoa</div>
-          <button onclick="copyPhoneCd()"><i data-feather="phone"></i></button>
+          <button onclick="copyPhoneCd()"><i class="size-20" data-feather="copy"></i></button>
         </div>
       </div>
 
       <div class="footer">
-        <p>Designed by <span>Duong Thoa</span> ~ Developed by <span>Duy Dat</span>
-          <br>
-          <span>09/2024</span>
-        </p>
+        <img class="couple-img" src="img/couple-removebg-preview.png" alt="">
+        <div class="author">Duy Đạt <button><i data-feather="heart"></i></button> Dương Thoa</div>
       </div>
+
     </div>
 
-    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
