@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="album.css" />
     <script src="js/feather.min.js"></script>
-    <link rel="icon" href="img/couple.png" type="image/x-icon" sizes="128x128">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+
+    <link
+      rel="icon"
+      href="img/couple.png"
+      type="image/x-icon"
+      sizes="128x128"
+    />
 
     <title>D&T Wedding</title>
   </head>
@@ -83,16 +90,16 @@
         </div>
         <div class="info-content">
           <p>
-            <em>Chú rể:  </em>Đoàn Duy Đạt<br />
+            <em>Chú rể: </em>Đoàn Duy Đạt<br />
             <em>con của</em><br />
-            <em>Ông:  </em>Đoàn Duy Quang<br />
-            <em>Bà:  </em>Đoàn Thị Xuân
+            <em>Ông: </em>Đoàn Duy Quang<br />
+            <em>Bà: </em>Đoàn Thị Xuân
           </p>
           <p>
-            <em>Cô dâu:  </em>Dương Thị Thoa<br />
+            <em>Cô dâu: </em>Dương Thị Thoa<br />
             <em>con của</em><br />
-            <em>Ông:  </em>Dương Đình Khanh<br />
-            <em>Bà:  </em>Trần Thị Ngát
+            <em>Ông: </em>Dương Đình Khanh<br />
+            <em>Bà: </em>Trần Thị Ngát
           </p>
         </div>
         <img src="img/couple-1.png" alt="" />
@@ -135,66 +142,45 @@
             <p>Album ảnh cưới</p>
           </div>
         </div>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <img src="img/album/01.JPG" style="width: 100%" />
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/album/01.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/album/02.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/album/03.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/album/04.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/album/05.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/album/06.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/album/07.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/album/08.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/album/09.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/album/10.JPG" alt="" />
+            </div>
           </div>
-
-          <div class="mySlides fade">
-            <img src="img/album/02.JPG" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/album/03.JPG" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/album/04.jpg" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/album/05.JPG" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/album/06.JPG" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/album/07.JPG" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/album/08.JPG" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/album/09.JPG" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/album/10.JPG" style="width: 100%" />
-          </div>
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br />
-
-        <!-- The dots/circles -->
-        <div class="dot-list" style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-          <span class="dot" onclick="currentSlide(6)"></span>
-          <span class="dot" onclick="currentSlide(7)"></span>
-          <span class="dot" onclick="currentSlide(8)"></span>
-          <span class="dot" onclick="currentSlide(9)"></span>
-          <span class="dot" onclick="currentSlide(10)"></span>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          
         </div>
       </div>
 
@@ -262,8 +248,9 @@
           </p>
           <div class="map__location">
             <img src="img/map/map-1.png" alt="" />
-            <a href="https://short.com.vn/XBKR" target="_blank"><i class="size-18" data-feather="map-pin"></i> Chỉ đường</a>
-            
+            <a href="https://short.com.vn/XBKR" target="_blank"
+              ><i class="size-18" data-feather="map-pin"></i> Chỉ đường</a
+            >
           </div>
         </div>
         <div class="map__item">
@@ -273,8 +260,9 @@
           </p>
           <div class="map__location">
             <img src="img/map/map-2.png" alt="" />
-            <a href="https://short.com.vn/awOI" target="_blank"><i class="size-18" data-feather="map-pin"></i> Chỉ đường</a>
-            
+            <a href="https://short.com.vn/awOI" target="_blank"
+              ><i class="size-18" data-feather="map-pin"></i> Chỉ đường</a
+            >
           </div>
         </div>
       </div>
@@ -367,6 +355,9 @@
     <script>
       feather.replace();
     </script>
+    <!-- Swiper JS -->
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <!-- index JS -->
     <script src="index.js"></script>
   </body>
 </html>
